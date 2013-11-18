@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../ext/resources/css/ext-all.css"/>
+    <link rel="stylesheet" type="text/css" href="ext/ux/grid/css/SummaryBar.css">
+
+    <script type="text/javascript" src="../ext/ext-all-debug-w-comments.js"></script>
+
+    <script type="text/javascript">
+        Ext.Loader.setPath('Ext.ux', 'ext/ux');
+        Ext.require('Ext.ux.grid.SummaryBar');
+
+        Ext.onReady(function () {
+
+            var grid = Ext.create('Ext.grid.Panel', {
+                title: 'Test',
+                columnLines: true,
+                store: {
+                    fields: ['name', 'value', 'details'],
+                    proxy: {
+                        type: 'ajax',
+                        url: 'data.json'
+                    }
+                },
+                columns: [
+                    {
+                        header: 'Name',
+                        dataIndex: 'name',
+                        summaryType: 'count',
+                        summaryRenderer: function (value) {
+                            return 'Total: ' + value;
+                        }
+                    },
+                    {
+                        header: 'Value',
+                        dataIndex: 'value',
+                        align: 'right',
+                        renderer: Ext.util.Format.numberRenderer('0,000.00'),
+                        summaryType: 'sum'
+                    },
+                    {
+                        header: 'Details',
+                        align: 'center',
+                        dataIndex: 'details',
+                        width: 1500,
+                        summaryType: 'count'
+                    }
+                ],
+                tbar: {
+                    items: {
+                        text: 'Load Data',
+                        handler: function () {
+                            grid.getStore().load()
+                        }
+                    }
+                }
+            });
+
+            var bar = Ext.create('Ext.ux.grid.SummaryBar', {
+                grid: grid,
+                dock:  'bottom'
+            });
+
+            grid.addDocked(bar);
+
+            Ext.create('Ext.container.Viewport', {
+                layout: 'fit',
+                items: [grid],
+                renderTo: Ext.getBody()
+            });
+        });
+    </script>
+</head>
+<body></body>
+</html>
