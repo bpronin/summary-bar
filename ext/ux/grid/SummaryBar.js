@@ -11,12 +11,14 @@ Ext.define('Ext.ux.grid.SummaryBar', {
 
     initComponent: function () {
         var me = this;
+
         var fields = [];
         Ext.Array.forEach(me.grid.columns, function (column) {
             fields.push(
                 {
                     itemId: column.dataIndex,
                     width: column.width,
+                    hidden: column.hidden,
                     style: {
                         textAlign: column.align
                     }
@@ -85,17 +87,19 @@ Ext.define('Ext.ux.grid.SummaryBar', {
     onViewRefresh: function () {
         var me = this;
         Ext.Array.forEach(me.grid.getView().getGridColumns(), function (column) {
-            var value = me.calcSummary(me.grid.getStore(), column.summaryType, column.dataIndex, true);
-            if (!value && value !== 0) {
-                value = '\u00a0';
-            }
+            if (column.summaryType) {
+                var value = me.calcSummary(me.grid.getStore(), column.summaryType, column.dataIndex, true);
+                if (!value && value !== 0) {
+                    value = '\u00a0';
+                }
 
-            var renderer = (column.summaryRenderer || column.renderer);
-            if (renderer) {
-                value = renderer.call(column.scope || this, value, value, column.dataIndex)
-            }
+                var renderer = (column.summaryRenderer || column.renderer);
+                if (renderer) {
+                    value = renderer.call(column.scope || this, value, value, column.dataIndex)
+                }
 
-            me.columnField(column).setValue(value);
+                me.columnField(column).setValue(value);
+            }
         });
     },
 
