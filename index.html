@@ -18,6 +18,7 @@
                 columnLines: true,
                 store: {
                     fields: ['name', 'value', 'details'],
+                    autoLoad: true,
                     proxy: {
                         type: 'ajax',
                         url: 'data.json'
@@ -41,10 +42,20 @@
                     },
                     {
                         header: 'Details',
-                        align: 'center',
-                        dataIndex: 'details',
-                        width: 1500,
-                        summaryType: 'count'
+                        dataIndex: 'details_group',
+                        columns: [
+                            {
+                                header: 'Sub 1',
+                                dataIndex: 'details_1',
+                                summaryType: 'count'
+                            },
+                            {
+                                header: 'Sub 2',
+                                dataIndex: 'details_2',
+                                summaryType: 'count',
+                                width: 1000
+                            }
+                        ]
                     }
                 ],
                 tbar: {
@@ -59,7 +70,7 @@
 
             var bar = Ext.create('Ext.ux.grid.SummaryBar', {
                 grid: grid,
-                dock:  'bottom'
+                dock: 'bottom'
             });
 
             grid.addDocked(bar);

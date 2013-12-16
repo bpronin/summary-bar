@@ -5,7 +5,7 @@
  */
 Ext.define('Ext.ux.grid.SummaryBar', {
     extend: 'Ext.Container',
-    alias: 'widget.summary-bar',
+    alias: 'widget.summary_bar',
 
     grid: null,
 
@@ -13,18 +13,28 @@ Ext.define('Ext.ux.grid.SummaryBar', {
         var me = this;
 
         var fields = [];
-        Ext.Array.forEach(me.grid.columns, function (column) {
-            fields.push(
-                {
-                    itemId: column.dataIndex,
-                    width: column.width,
-                    hidden: column.hidden,
-                    style: {
-                        textAlign: column.align
-                    }
+
+        function addFields(columns) {
+            Ext.Array.forEach(columns, function (column) {
+                var subColumns = column.items.items;
+                if (subColumns.length > 0) {
+                    addFields(subColumns);
+                } else {
+                    fields.push(
+                        {
+                            itemId: column.dataIndex,
+                            width: column.width,
+                            hidden: column.hidden,
+                            style: {
+                                textAlign: column.align
+                            }
+                        }
+                    )
                 }
-            )
-        });
+            });
+        }
+
+        addFields(me.grid.columns);
 
         Ext.apply(me, {
             layout: {

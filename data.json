@@ -2,361 +2,183 @@
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "B",
         value: 10,
-        details: "details B"
+        details: "details B",
+        details_1: "details B1",
+        details_2: "details B2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     },
     {
         name: "A",
         value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
+        details: "details A",
+        details_1: "details A1",
+        details_2: "details A2"
     },
     {
         name: "C",
         value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
-    },
-    {
-        name: "A",
-        value: 1,
-        details: "details A"
-    },
-    {
-        name: "B",
-        value: 10,
-        details: "details B"
-    },
-    {
-        name: "C",
-        value: 100,
-        details: "details C"
+        details: "details C",
+        details_1: "details C1",
+        details_2: "details C2"
     }
 ]
